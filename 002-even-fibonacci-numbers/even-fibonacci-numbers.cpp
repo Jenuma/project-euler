@@ -38,6 +38,6 @@ int main()
 
 	cout << sum << endl;
 
-	system("pause");
+	cin.get();
 	return 0;
 }
