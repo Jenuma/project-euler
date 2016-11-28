@@ -16,9 +16,27 @@ using namespace std;
 
 int main()
 {
-	const int LIMIT = 4000000;
+	const unsigned int LIMIT = 4000000;
 
-	
+	unsigned int sum = 0;
+	unsigned int a = 1;
+	unsigned int b = 1;
+	unsigned int c = 0;
+
+	while (b < LIMIT)
+	{
+		c = a + b;
+
+		if (c < LIMIT && c % 2 == 0)
+		{
+			sum += c;
+		}
+
+		a = b;
+		b = c;
+	}
+
+	cout << sum << endl;
 
 	system("pause");
 	return 0;
