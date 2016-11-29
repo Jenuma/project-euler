@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "007-10001st-prime", "007-10
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "008-largest-product-in-a-series", "008-largest-product-in-a-series\008-largest-product-in-a-series.vcxproj", "{08234663-0534-4EBE-A546-00F81B12C1E0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "009-special-pythagorean-triplet", "009-special-pythagorean-triplet\009-special-pythagorean-triplet.vcxproj", "{3500800B-77D8-4803-AE4F-F19CC6A20CC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{08234663-0534-4EBE-A546-00F81B12C1E0}.Release|x64.Build.0 = Release|x64
 		{08234663-0534-4EBE-A546-00F81B12C1E0}.Release|x86.ActiveCfg = Release|Win32
 		{08234663-0534-4EBE-A546-00F81B12C1E0}.Release|x86.Build.0 = Release|Win32
+		{3500800B-77D8-4803-AE4F-F19CC6A20CC0}.Debug|x64.ActiveCfg = Debug|x64
+		{3500800B-77D8-4803-AE4F-F19CC6A20CC0}.Debug|x64.Build.0 = Debug|x64
+		{3500800B-77D8-4803-AE4F-F19CC6A20CC0}.Debug|x86.ActiveCfg = Debug|Win32
+		{3500800B-77D8-4803-AE4F-F19CC6A20CC0}.Debug|x86.Build.0 = Debug|Win32
+		{3500800B-77D8-4803-AE4F-F19CC6A20CC0}.Release|x64.ActiveCfg = Release|x64
+		{3500800B-77D8-4803-AE4F-F19CC6A20CC0}.Release|x64.Build.0 = Release|x64
+		{3500800B-77D8-4803-AE4F-F19CC6A20CC0}.Release|x86.ActiveCfg = Release|Win32
+		{3500800B-77D8-4803-AE4F-F19CC6A20CC0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
