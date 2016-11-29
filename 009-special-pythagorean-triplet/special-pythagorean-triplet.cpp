@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <math.h>
-#include <Windows.h>
+#include <windows.h>
 
 using namespace std;
 
