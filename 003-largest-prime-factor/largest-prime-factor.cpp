@@ -8,10 +8,32 @@
 */
 
 #include <iostream>
-#include <windows.h>
 #include <math.h>
 
 using namespace std;
+
+bool isPrime(unsigned long);
+
+int main()
+{
+	const unsigned long long LIMIT = 600851475143;
+	const unsigned long SQRT_LIMIT = sqrt(LIMIT);
+
+	unsigned long largestPrime = 0;
+
+	for (unsigned long i = 2; i <= SQRT_LIMIT; i++)
+	{
+		if (LIMIT % i == 0 && isPrime(i) && i > largestPrime)
+		{
+			largestPrime = i;
+		}
+	}
+
+	cout << largestPrime << endl;
+
+	cin.get();
+	return 0;
+}
 
 bool isPrime(unsigned long n)
 {
@@ -35,52 +57,4 @@ bool isPrime(unsigned long n)
 
 		return true;
 	}
-}
-
-int main()
-{
-	DWORD dw;
-	COORD write_head;
-	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
-	if (hStdOut == INVALID_HANDLE_VALUE)
-	{
-		cout << "ERROR: Invalid handle." << endl;
-		cin.get();
-		return 1;
-	}
-
-	const unsigned long long LIMIT = 600851475143;
-	const unsigned long SQRT_LIMIT = sqrt(LIMIT);
-	const unsigned int INCREMENT = (SQRT_LIMIT / 100);
-
-	unsigned long largestPrime = 0;
-
-	write_head.X = 0;
-	write_head.Y = 0;
-	WriteConsoleOutputCharacter(hStdOut, "[", 1, write_head, &dw);
-	write_head.X += 1;
-
-	for (unsigned long i = 2; i <= SQRT_LIMIT; i++)
-	{
-		if (INCREMENT % i == 0)
-		{
-			WriteConsoleOutputCharacter(hStdOut, ".", 1, write_head, &dw);
-			write_head.X += 1;
-		}
-
-		if (LIMIT % i == 0 && isPrime(i) && i > largestPrime)
-		{
-			largestPrime = i;
-		}
-	}
-
-	WriteConsoleOutputCharacter(hStdOut, "]", 1, write_head, &dw);
-	write_head.X = 0;
-	write_head.Y += 1;
-	SetConsoleCursorPosition(hStdOut, write_head);
-
-	cout << largestPrime << endl;
-
-	cin.get();
-	return 0;
 }
