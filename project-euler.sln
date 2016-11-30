@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "009-special-pythagorean-tri
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "010-summation-of-primes", "010-summation-of-primes\010-summation-of-primes.vcxproj", "{0FCB8E2C-344B-45E4-9E9E-4A09B116EDF1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "011-largest-product-in-a-grid", "011-largest-product-in-a-grid\011-largest-product-in-a-grid.vcxproj", "{94C6113D-A60C-4DED-9169-EF4F98312DA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{0FCB8E2C-344B-45E4-9E9E-4A09B116EDF1}.Release|x64.Build.0 = Release|x64
 		{0FCB8E2C-344B-45E4-9E9E-4A09B116EDF1}.Release|x86.ActiveCfg = Release|Win32
 		{0FCB8E2C-344B-45E4-9E9E-4A09B116EDF1}.Release|x86.Build.0 = Release|Win32
+		{94C6113D-A60C-4DED-9169-EF4F98312DA6}.Debug|x64.ActiveCfg = Debug|x64
+		{94C6113D-A60C-4DED-9169-EF4F98312DA6}.Debug|x64.Build.0 = Debug|x64
+		{94C6113D-A60C-4DED-9169-EF4F98312DA6}.Debug|x86.ActiveCfg = Debug|Win32
+		{94C6113D-A60C-4DED-9169-EF4F98312DA6}.Debug|x86.Build.0 = Debug|Win32
+		{94C6113D-A60C-4DED-9169-EF4F98312DA6}.Release|x64.ActiveCfg = Release|x64
+		{94C6113D-A60C-4DED-9169-EF4F98312DA6}.Release|x64.Build.0 = Release|x64
+		{94C6113D-A60C-4DED-9169-EF4F98312DA6}.Release|x86.ActiveCfg = Release|Win32
+		{94C6113D-A60C-4DED-9169-EF4F98312DA6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
